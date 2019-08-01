@@ -1,0 +1,9 @@
+<suite name = "SafeShowingsAPI">
+	<test name = "APIAutomation">
+		<classes>
+			<class name ="">
+
+			</class>
+		</classes>
+	</test>
+</suite>
