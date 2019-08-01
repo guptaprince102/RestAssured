@@ -2,11 +2,14 @@ package Kiwitech.SafeShowings;
 
 import org.testng.annotations.Test;
 
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.*;
+
 public class Login {
 	@Test
 	public void Test_01(){
-		System.out.println("First Test");
-		System.out.println("Test");
+		Response resp= when().get();	
 	}
 	
 
