@@ -829,3 +829,212 @@ java.net.SocketTimeoutException: Read timed out
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Thread.java:748)
+!SESSION 2019-08-01 21:44:21.137 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/princegupta/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/princegupta/RestAssured -product org.eclipse.epp.package.jee.product -keyring /Users/princegupta/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-08-01 21:44:28.412
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-01 21:44:39.880
+!MESSAGE Removing part descriptor with the 'org.eclipse.buildship.ui.views.taskview' id and the 'Gradle Tasks' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-01 21:44:39.891
+!MESSAGE Removing part descriptor with the 'org.eclipse.buildship.ui.views.executionview' id and the 'Gradle Executions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-01 21:44:39.909
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.builds.navigator.builds' id and the 'Builds' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-01 21:44:39.916
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.snipmatch.rcp.views.snippets' id and the 'Snippets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-08-01 21:44:44.583
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Service Temporarily Unavailable. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:56)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:69)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-08-01 21:55:10.182
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-08-01 21:55:10.182
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.182
+!MESSAGE Software being installed: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.182
+!MESSAGE Missing requirement: TestNG Eclipse Support 6.14.3.201902250526 (org.testng.eclipse 6.14.3.201902250526) requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.182
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.182
+!MESSAGE From: TestNG 6.14.3.201902250526 (org.testng.eclipse.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.182
+!MESSAGE To: org.testng.eclipse [6.14.3.201902250526]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.182
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.182
+!MESSAGE From: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.182
+!MESSAGE To: org.testng.eclipse.feature.group [6.14.3,7.0.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-08-01 21:55:10.228
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-08-01 21:55:10.228
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.228
+!MESSAGE Software being installed: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.229
+!MESSAGE Missing requirement: TestNG Eclipse Support 6.14.3.201902250526 (org.testng.eclipse 6.14.3.201902250526) requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.229
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.229
+!MESSAGE From: TestNG 6.14.3.201902250526 (org.testng.eclipse.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.229
+!MESSAGE To: org.testng.eclipse [6.14.3.201902250526]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.229
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.229
+!MESSAGE From: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.229
+!MESSAGE To: org.testng.eclipse.feature.group [6.14.3,7.0.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-08-01 21:55:10.244
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-08-01 21:55:10.244
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.244
+!MESSAGE Software being installed: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.244
+!MESSAGE Missing requirement: TestNG Eclipse Support 6.14.3.201902250526 (org.testng.eclipse 6.14.3.201902250526) requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.244
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.244
+!MESSAGE From: TestNG 6.14.3.201902250526 (org.testng.eclipse.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.244
+!MESSAGE To: org.testng.eclipse [6.14.3.201902250526]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.244
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.244
+!MESSAGE From: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.244
+!MESSAGE To: org.testng.eclipse.feature.group [6.14.3,7.0.0)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-08-01 21:55:10.245
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-08-01 21:55:10.245
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.245
+!MESSAGE Software being installed: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.245
+!MESSAGE Missing requirement: TestNG Eclipse Support 6.14.3.201902250526 (org.testng.eclipse 6.14.3.201902250526) requires 'bundle org.eclipse.jdt.launching 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.245
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.245
+!MESSAGE From: TestNG 6.14.3.201902250526 (org.testng.eclipse.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.245
+!MESSAGE To: org.testng.eclipse [6.14.3.201902250526]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-08-01 21:55:10.245
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.245
+!MESSAGE From: TestNG M2E (Maven) Integration (Optional) 6.14.3.201902250526 (org.testng.eclipse.maven.feature.feature.group 6.14.3.201902250526)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-08-01 21:55:10.245
+!MESSAGE To: org.testng.eclipse.feature.group [6.14.3,7.0.0)
+!SESSION 2019-08-01 22:52:52.389 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/princegupta/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/Users/princegupta/RestAssured/ -product org.eclipse.epp.package.jee.product -keyring /Users/princegupta/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-08-01 22:53:16.904
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-08-01 22:53:44.802
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Read timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.testng.eclipse 1 0 2019-08-01 22:55:40.056
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/testng-remote.jar /Users/princegupta/RestAssured/SafeShowings/target/test-classes /Users/princegupta/RestAssured/SafeShowings/target/classes /Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/testng.jar /Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/jcommander.jar /Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/bsh-2.0b4.jar /Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/snakeyaml.jar /Users/princegupta/.m2/repository/io/rest-assured/rest-assured/4.0.0/rest-assured-4.0.0.jar /Users/princegupta/.m2/repository/org/codehaus/groovy/groovy/2.5.6/groovy-2.5.6.jar /Users/princegupta/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.6/groovy-xml-2.5.6.jar /Users/princegupta/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar /Users/princegupta/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar /Users/princegupta/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar /Users/princegupta/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar /Users/princegupta/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar /Users/princegupta/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.jar /Users/princegupta/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar /Users/princegupta/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar /Users/princegupta/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar /Users/princegupta/.m2/repository/io/rest-assured/xml-path/4.0.0/xml-path-4.0.0.jar /Users/princegupta/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar /Users/princegupta/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar /Users/princegupta/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar /Users/princegupta/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar /Users/princegupta/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar /Users/princegupta/.m2/repository/io/rest-assured/json-path/4.0.0/json-path-4.0.0.jar /Users/princegupta/.m2/repository/org/codehaus/groovy/groovy-json/2.5.6/groovy-json-2.5.6.jar /Users/princegupta/.m2/repository/io/rest-assured/rest-assured-common/4.0.0/rest-assured-common-4.0.0.jar /Users/princegupta/.m2/repository/io/rest-assured/json-schema-validator/4.0.0/json-schema-validator-4.0.0.jar /Users/princegupta/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar /Users/princegupta/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar /Users/princegupta/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar /Users/princegupta/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar /Users/princegupta/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar /Users/princegupta/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar /Users/princegupta/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar /Users/princegupta/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar /Users/princegupta/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar /Users/princegupta/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar /Users/princegupta/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar /Users/princegupta/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar /Users/princegupta/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar /Users/princegupta/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar /Users/princegupta/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar /Users/princegupta/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar /Users/princegupta/.m2/repository/io/rest-assured/scala-support/4.0.0/scala-support-4.0.0.jar /Users/princegupta/.m2/repository/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar /Users/princegupta/.m2/repository/io/rest-assured/spring-mock-mvc/3.3.0/spring-mock-mvc-3.3.0.jar /Users/princegupta/.m2/repository/io/rest-assured/spring-commons/3.3.0/spring-commons-3.3.0.jar /Users/princegupta/.m2/repository/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/springframework/spring-webmvc/4.2.6.RELEASE/spring-webmvc-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/springframework/spring-beans/4.2.6.RELEASE/spring-beans-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar /Users/princegupta/.m2/repository/org/springframework/spring-expression/4.2.6.RELEASE/spring-expression-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar /Users/princegupta/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar /Users/princegupta/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar /Users/princegupta/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50948 -protocol json -d /Users/princegupta/RestAssured/SafeShowings/test-output /var/folders/b0/903msbv15_z7srxgj8jbgdy40000gn/T/testng-eclipse--1414599818/testng-customsuite.xml
+java -ea -classpath /Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/testng-remote.jar:/Users/princegupta/RestAssured/SafeShowings/target/test-classes:/Users/princegupta/RestAssured/SafeShowings/target/classes:/Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/testng.jar:/Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/jcommander.jar:/Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/bsh-2.0b4.jar:/Users/princegupta/.eclipse/org.eclipse.platform_4.6.3_1552587996_macosx_cocoa_x86_64/plugins/org.testng.eclipse_6.10.0.201612030230/lib/snakeyaml.jar:/Users/princegupta/.m2/repository/io/rest-assured/rest-assured/4.0.0/rest-assured-4.0.0.jar:/Users/princegupta/.m2/repository/org/codehaus/groovy/groovy/2.5.6/groovy-2.5.6.jar:/Users/princegupta/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.6/groovy-xml-2.5.6.jar:/Users/princegupta/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/princegupta/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/princegupta/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/princegupta/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/princegupta/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/princegupta/.m2/repository/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.jar:/Users/princegupta/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/princegupta/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar:/Users/princegupta/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/princegupta/.m2/repository/io/rest-assured/xml-path/4.0.0/xml-path-4.0.0.jar:/Users/princegupta/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/princegupta/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/princegupta/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/princegupta/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/princegupta/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/princegupta/.m2/repository/io/rest-assured/json-path/4.0.0/json-path-4.0.0.jar:/Users/princegupta/.m2/repository/org/codehaus/groovy/groovy-json/2.5.6/groovy-json-2.5.6.jar:/Users/princegupta/.m2/repository/io/rest-assured/rest-assured-common/4.0.0/rest-assured-common-4.0.0.jar:/Users/princegupta/.m2/repository/io/rest-assured/json-schema-validator/4.0.0/json-schema-validator-4.0.0.jar:/Users/princegupta/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/princegupta/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/princegupta/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/princegupta/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/princegupta/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/princegupta/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/princegupta/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/Users/princegupta/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/princegupta/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/princegupta/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/princegupta/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/princegupta/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/princegupta/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar:/Users/princegupta/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/princegupta/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/princegupta/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/princegupta/.m2/repository/io/rest-assured/scala-support/4.0.0/scala-support-4.0.0.jar:/Users/princegupta/.m2/repository/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar:/Users/princegupta/.m2/repository/io/rest-assured/spring-mock-mvc/3.3.0/spring-mock-mvc-3.3.0.jar:/Users/princegupta/.m2/repository/io/rest-assured/spring-commons/3.3.0/spring-commons-3.3.0.jar:/Users/princegupta/.m2/repository/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/springframework/spring-webmvc/4.2.6.RELEASE/spring-webmvc-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/springframework/spring-beans/4.2.6.RELEASE/spring-beans-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/princegupta/.m2/repository/org/springframework/spring-expression/4.2.6.RELEASE/spring-expression-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar:/Users/princegupta/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/princegupta/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/princegupta/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar org.testng.remote.RemoteTestNG -serport 50948 -protocol json -d /Users/princegupta/RestAssured/SafeShowings/test-output /var/folders/b0/903msbv15_z7srxgj8jbgdy40000gn/T/testng-eclipse--1414599818/testng-customsuite.xml
+
+!ENTRY org.eclipse.jface.text 2 0 2019-08-01 22:56:41.583
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-08-01 22:56:41.584
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-08-01 22:56:43.775
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/neon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/neon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-08-01 22:56:43.777
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
