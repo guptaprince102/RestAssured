@@ -1,0 +1,24 @@
+package JavaLearnings;
+
+import java.util.Scanner;
+
+public class fibonacciSeries {
+
+	public static void main(String[] args) {
+		// 1 1 2 3 5 8 13 21 34......n
+		int k=0,a=1,b=1;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Limit");
+		int limit = sc.nextInt();
+		System.out.print("1 1 ");
+		while(k<limit){
+			k=a+b;
+			if(k>=limit)
+				break;
+			System.out.print(k+" ");
+			a=b;
+			b=k;
+		}
+	}
+
+}

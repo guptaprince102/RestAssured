@@ -1,0 +1,15 @@
+package JavaLearnings;
+
+public class pattern12 {
+	public static void main(String[] args){
+/*		1
+		10
+		101
+		1010
+		10101
+		101010 
+		1010101
+*/		
+	}
+
+}

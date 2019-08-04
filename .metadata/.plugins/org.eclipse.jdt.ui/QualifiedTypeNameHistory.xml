@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
 <fullyQualifiedTypeName name="io.restassured.response.Response"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

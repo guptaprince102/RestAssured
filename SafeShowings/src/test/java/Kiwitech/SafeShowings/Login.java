@@ -1,19 +1,11 @@
 package Kiwitech.SafeShowings;
 
-
-
-import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
-
 import org.testng.annotations.Test;
 
 public class Login {
 	@Test
-	public void Test_01(){
-		Response resp= when().get();	
+	public void Test_01(){	
 		System.out.println("Test");
 	}
-	
 
 }

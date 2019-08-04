@@ -1,0 +1,16 @@
+package JavaLearnings;
+
+public class pattern5 {
+
+	public static void main(String[] args) {
+	/*	7 6 5 4 3 2 1
+		7 6 5 4 3 2 
+		7 6 5 4 3 
+		7 6 5 4
+		7 6 5
+		7 6
+		7
+	*/
+	}
+
+}
